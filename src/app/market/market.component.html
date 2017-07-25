@@ -1,0 +1,14 @@
+<div class="container">
+  <br><br><br>
+    <div class="row">
+      <div class="col s12">
+        <div class="collection" *ngFor="let item of collectibles">
+          <a class="collection-item">
+    <a class="btn-floating waves-effect waves-light teal accent-4" onclick="alert('Market item has been added to collection')" (click)="addCollection(item)"><i class="material-icons">add</i></a>
+          {{item.description}}
+          <span class="chip right teal accent-4"> {{item.type}} </span>
+        </a>
+      </div>
+      </div>
+    </div>
+</div>
